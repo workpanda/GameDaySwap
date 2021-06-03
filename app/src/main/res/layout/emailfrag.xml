@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/homePageSpacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:text="Email:"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <EditText
+        android:id="@+id/fragEmailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homePageSpacer"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" 
+        android:nextFocusDown="@+id/fragPasswordField"
+        android:nextFocusForward="@+id/fragPasswordField"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/homeTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fragEmailField"
+        android:text="Password:"
+        android:textSize="@dimen/userinfotextsize_normal" 
+        android:textColor="@color/white_text"/>
+
+    <EditText
+        android:id="@+id/fragPasswordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homeTeamName"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" 
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/fragLogInButton"
+        android:background="@drawable/buttonlayout"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_below="@+id/fragPasswordField"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:text="Log In" />
+    <Button
+        android:id="@+id/fragLogInForgotPassword"
+        android:background="@drawable/buttonlayout"
+        android:layout_width="@dimen/bottombuttonwidth2_normal"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fragLogInButton"
+        android:layout_toRightOf="@+id/textSpace"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/bottombuttontextsize2_normal"
+        android:text="Forgot Password" />
+    <Button
+        android:id="@+id/fragLogInNewUser"
+        android:background="@drawable/buttonlayout"
+        android:layout_width="@dimen/bottombuttonwidth2_normal"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fragLogInButton"
+        android:layout_toLeftOf="@+id/textSpace"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/bottombuttontextsize2_normal"
+        android:text="New User" />
+    <TextView
+        android:id="@+id/textSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragLogInButton"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text=" "
+        android:textSize="@dimen/userinfotextsize_normal" 
+        android:textColor="@color/white_text"/>
+
+</RelativeLayout>

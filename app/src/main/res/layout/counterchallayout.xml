@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <LinearLayout
+        android:id="@+id/teamBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/teambox"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,2" >
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/counterAwayLogo"
+                    android:layout_width="@dimen/swapboxlogowidth_normal"
+                    android:layout_height="@dimen/swapboxlogoheight_normal"
+                    android:src="@drawable/ic_loading" />
+
+                <TextView
+                    android:id="@+id/atCounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="at"
+                    android:textColor="@color/black_text"
+                    android:layout_gravity="center"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/counterHomeLogo"
+                    android:layout_width="@dimen/swapboxlogowidth_normal"
+                    android:layout_height="@dimen/swapboxlogoheight_normal"
+                    android:src="@drawable/ic_loading" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/swapBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <TableRow
+                    android:id="@+id/rowAwayIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/awayInPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="InPlayer" />
+
+                    <TextView
+                        android:id="@+id/awayInTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="Team" />
+
+                    <TextView
+                        android:id="@+id/awayInPos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="Pos" />
+
+                    <TextView
+                        android:id="@+id/awayInIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/inLabel"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="In" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowAwayOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+                        android:id="@+id/awayOutPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="OutPlayer" />
+
+                    <TextView
+                        android:id="@+id/awayOutTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="Team" />
+
+                    <TextView
+                        android:id="@+id/awayOutPos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="Pos" />
+
+                    <TextView
+                        android:id="@+id/awayOutOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/outLabel"
+                		android:padding="@dimen/swapboxpadding_normal"
+                		android:layout_gravity="right"
+                        android:text="Out" />
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/swapIcon"
+                android:layout_width="@dimen/teamboxlogowidth_normal"
+                android:layout_height="@dimen/teamboxlogoheight_normal"
+                android:layout_gravity="center"
+                android:src="@drawable/swap_icon" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/rowHomeIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+                        android:id="@+id/homeInIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/inLabel"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="In" />
+                    
+                    <TextView
+                        android:id="@+id/homeInPos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="Pos" />
+
+                    <TextView
+                        android:id="@+id/homeInTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="Team" />
+                    
+                    <TextView
+                        android:id="@+id/homeInPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="InPlayer" />
+                    
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowHomeOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView
+                        android:id="@+id/homeOutOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/outLabel"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="Out" />
+                    
+                    <TextView
+                        android:id="@+id/homeOutPos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="Pos" />
+
+                    <TextView
+                        android:id="@+id/homeOutTeam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="Team" />
+                    
+                    <TextView
+                        android:id="@+id/homeOutPlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/swapboxtext_normal"
+                		android:textColor="@color/black_text"
+                		android:padding="@dimen/swapboxpadding_normal"
+                        android:text="OutPlayer" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pickWinnerFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinnerlayoutheight_normal"
+        android:layout_above="@+id/pickLineFrame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/confirmdisplay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:text="Make Your Counter:"
+            android:textSize="@dimen/spinnertitletextsize_normal"
+            android:textColor="@color/white_text" />
+
+        <Spinner
+            android:id="@+id/spinWinnerListCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/confirmdisplay2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/spinner_background_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pickLineFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinnerlayoutheight_normal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/confirmdisplay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:text="Pick Your Line:"
+            android:textSize="@dimen/spinnertitletextsize_normal"
+            android:textColor="@color/white_text" />
+
+        <Spinner
+            android:id="@+id/spinLineCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinWinnerList"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/spinner_background_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pickWagerFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinnerlayoutheight_normal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pickLineFrame"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/confirmdisplay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:text="Pick Challenge Amount:"
+            android:textSize="@dimen/spinnertitletextsize_normal"
+            android:textColor="@color/white_text" />
+
+        <Spinner
+            android:id="@+id/spinWagerCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/spinner_background_color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSendCounter"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonlayout"
+        android:onClick="onScanPress"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Send Counter"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+
+    
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+</RelativeLayout>

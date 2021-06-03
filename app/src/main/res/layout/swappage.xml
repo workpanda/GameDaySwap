@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/swapNextButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/awayswapframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/swapPageSpacer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/outlineborder2"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/swapAwayLogo"
+                    android:layout_width="@dimen/teamboxlogowidth_normal"
+                    android:layout_height="@dimen/teamboxlogoheight_normal"
+                    android:src="@drawable/ic_loading" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/swapAwayName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="AwayTeam"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/userinfotextsize_normal" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/swappageIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="In:"
+                                android:textColor="@color/inLabel" />
+
+                            <TextView
+                                android:id="@+id/swapAwayPlayerIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AwayPlayerIn" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/swappageOut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Out:"
+                                android:textColor="@color/outLabel" />
+
+                            <TextView
+                                android:id="@+id/swapAwayPlayerOut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AwayPlayerOut" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/swapAwayList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/shape"
+                android:fadeScrollbars="false"
+                android:padding="2dp"
+                android:scrollbarSize="10dp" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/swapPageSpacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="1dp" />
+
+        <LinearLayout
+            android:id="@+id/swaphomeframe"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/swapPageSpacer"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/outlineborder2"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/swapHomeLogo"
+                    android:layout_width="@dimen/teamboxlogowidth_normal"
+                    android:layout_height="@dimen/teamboxlogoheight_normal"
+                    android:src="@drawable/ic_loading" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/swapHomeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="HomeTeam"
+                        android:textColor="@color/black_text"
+                        android:textSize="@dimen/userinfotextsize_normal" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/swappageIn2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="In:"
+                                android:textColor="@color/inLabel" />
+
+                            <TextView
+                                android:id="@+id/swapHomePlayerIn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HomePlayerIn" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/swappageOut2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Out:"
+                                android:textColor="@color/outLabel" />
+
+                            <TextView
+                                android:id="@+id/swapHomePlayerOut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HomePlayerOut" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/swapHomeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/shape"
+                android:fadeScrollbars="false"
+                android:padding="2dp"
+                android:scrollbarSize="10dp" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/swapNextButton"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Set Challenge"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/bottombuttontextsize1_normal" />
+
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+</RelativeLayout>

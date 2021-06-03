@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <LinearLayout
+        android:id="@+id/pickAwayFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinnerlayoutheight_normal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/pickAwayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:text="Pick Away Team:"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/spinnertitletextsize_normal" />
+
+        <Spinner
+            android:id="@+id/spinAwayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinWinnerList"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/spinner_background_color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/makeChalButton"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Make Challenge"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+
+    <LinearLayout
+        android:id="@+id/pickHomeFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/spinnerlayoutheight_normal"
+        android:layout_above="@+id/pickAwayFrame"
+        android:layout_alignLeft="@+id/pickAwayFrame"
+        android:layout_alignRight="@+id/pickAwayFrame"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/pickHomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:text="Pick Home Team:"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/spinnertitletextsize_normal" />
+
+        <Spinner
+            android:id="@+id/spinHomeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pickAwayFrame"
+            android:layout_alignLeft="@+id/makeChalButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/spinner_background_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sportLogoCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_launcher" />
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+</RelativeLayout>

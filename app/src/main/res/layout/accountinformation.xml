@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/moneyBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/midmargin_normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/midmargin_normal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/teambox"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/midpadding_normal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="@dimen/midpadding_normal" >
+
+        <TextView
+            android:id="@+id/textViewAccountFreeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/largemargin_normal"
+            android:layout_marginRight="@dimen/largemargin_normal"
+            android:text="Available Funds"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/moneyheader_normal" />
+
+        <TextView
+            android:id="@+id/textViewAccountFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/largemargin_normal"
+            android:layout_marginRight="@dimen/largemargin_normal"
+            android:text="$$A"
+            android:textColor="@color/money_color"
+            android:textSize="@dimen/moneyvalue_normal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textViewAccountFrozenHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/largemargin_normal"
+            android:layout_marginRight="@dimen/largemargin_normal"
+            android:text="Commited funds"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/moneyheader_normal" />
+
+        <TextView
+            android:id="@+id/textViewAccountFrozen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/largemargin_normal"
+            android:layout_marginRight="@dimen/largemargin_normal"
+            android:text="$$C"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/moneyvalue_normal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar"
+        android:layout_below="@+id/moneyBox"
+        android:fadeScrollbars="false" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/xlpadding_normal" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/accountinfobottommargin_normal" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="First:"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+
+                    <TextView
+                        android:id="@+id/textViewFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="First name here"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewLast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Last:"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+
+                    <TextView
+                        android:id="@+id/textViewLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="last name here"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TeamHeadersRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+
+                    <TextView
+                        android:id="@+id/textViewEmailSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="email here"
+                        android:textColor="@color/white_text"
+                        android:textSize="@dimen/accountinfotext_normal" />
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                android:id="@+id/textViewCreditCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment:"
+                android:textSize="@dimen/accountinfotext_normal"
+                android:textColor="@color/white_text" />
+
+            <TextView
+                android:id="@+id/textViewCreditCardSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Account Information"
+                android:textSize="@dimen/accountinfotext_normal"
+                android:textColor="@color/white_text" />
+                </TableRow>
+            </TableLayout>
+
+            
+
+            <Button
+                android:id="@+id/buttonChangeCCN"
+                android:layout_width="@dimen/accountinfobuttonwidth_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/accountinfobottommargin_normal"
+                android:layout_marginLeft="@dimen/accountinfobottommargin_normal"
+                android:background="@drawable/buttonlayout"
+                android:onClick="onScanPress"
+                android:paddingBottom="@dimen/midpadding_normal"
+                android:paddingLeft="@dimen/largepadding_normal"
+                android:paddingRight="@dimen/largepadding_normal"
+                android:paddingTop="@dimen/midpadding_normal"
+                android:text="Edit Payment"
+                android:textColor="@color/black_text" />
+
+            <Button
+                android:id="@+id/buttonEditInfo"
+                android:layout_width="@dimen/accountinfobuttonwidth_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/accountinfobottommargin_normal"
+                android:layout_marginLeft="@dimen/accountinfobottommargin_normal"
+                android:background="@drawable/buttonlayout"
+                android:onClick="onScanPress"
+                android:paddingBottom="@dimen/midpadding_normal"
+                android:paddingLeft="@dimen/largepadding_normal"
+                android:paddingRight="@dimen/largepadding_normal"
+                android:paddingTop="@dimen/midpadding_normal"
+                android:text="Edit Account Info"
+                android:textColor="@color/black_text" />
+
+            <Button
+                android:id="@+id/buttonChangePW"
+                android:layout_width="@dimen/accountinfobuttonwidth_normal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/accountinfobottommargin_normal"
+                android:layout_marginLeft="@dimen/accountinfobottommargin_normal"
+                android:background="@drawable/buttonlayout"
+                android:onClick="Change Password"
+                android:paddingBottom="@dimen/midpadding_normal"
+                android:paddingLeft="@dimen/largepadding_normal"
+                android:paddingRight="@dimen/largepadding_normal"
+                android:paddingTop="@dimen/midpadding_normal"
+                android:text="Change Password"
+                android:textColor="@color/black_text" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+    <Button
+        android:id="@+id/buttonWithdrawl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/moneyBox"
+        android:layout_toRightOf="@+id/moneyBox"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/largepadding_normal"
+        android:paddingLeft="@dimen/largepadding_normal"
+        android:paddingRight="@dimen/largepadding_normal"
+        android:paddingTop="@dimen/largepadding_normal"
+        android:text="Withdrawal Funds"
+        android:textColor="@color/black_text" />
+    
+    <Button
+        android:id="@+id/buttonDeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/moneyBox"
+        android:layout_toRightOf="@+id/moneyBox"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/largepadding_normal"
+        android:paddingLeft="@dimen/largepadding_normal"
+        android:paddingRight="@dimen/largepadding_normal"
+        android:paddingTop="@dimen/largepadding_normal"
+        android:text="Make Deposit"
+        android:textColor="@color/black_text" />
+
+</RelativeLayout>

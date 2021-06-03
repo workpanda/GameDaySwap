@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+        	android:layout_above="@+id/bottombar"
+            android:gravity="center"
+            android:orientation="vertical" >
+            
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/profootball"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:contentDescription="@string/football"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_footballnfl"
+                android:text="@string/football" />
+
+            <ImageButton
+                android:id="@+id/probasketball"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_alignRight="@+id/profootball"
+                android:layout_below="@+id/collegefootball"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:contentDescription="@string/basketball"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_basketballnba" />
+
+            <ImageButton
+                android:id="@+id/collegebasketball"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_alignRight="@+id/collegefootball"
+                android:layout_below="@+id/collegefootball"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:contentDescription="@string/basketballicon"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_basketballncaa" />
+
+            <ImageButton
+                android:id="@+id/prohockey"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_alignLeft="@+id/probaseball"
+                android:layout_below="@+id/collegebasketball"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/iconroundlayout"
+                android:contentDescription="@string/hockey"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_hockey" />
+
+            <ImageButton
+                android:id="@+id/probaseball"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_alignLeft="@+id/probasketball"
+                android:layout_below="@+id/prohockey"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:contentDescription="@string/baseball"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseball" />
+
+            <ImageButton
+                android:id="@+id/collegefootball"
+                android:layout_width="@dimen/sportbuttonwidth_normal"
+                android:layout_height="@dimen/sportbuttonheight_normal"
+                android:layout_above="@+id/profootball"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:contentDescription="@string/football"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_footballncaa"
+                android:text="@string/football" />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game Day Swap</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_user">Welcome user</string>
+    <string name="challenge">Challenge</string>
+    <string name="challenges_pending">Challenges Pending</string>
+    <string name="Active_challenges">Active Challenges</string>
+    <string name="acount_information">Account Information</string>
+    <string name="pick_a_sport">Pick a Sport</string>
+    <string name="professional">Professional</string>
+    <string name="college">College</string>
+    <string name="football">football</string>
+    <string name="basketball">Basketball</string>
+    <string name="basketballicon">basketballicon</string>
+    <string name="baseball">baseball</string>
+    <string name="hockey">hockey</string>
+    <string name="name">name</string>
+     <string name="compose_sms">Compose SMS</string>
+    
+  
+    <string name="phone_label">Enter Phone Number:</string>
+    <string name="sms_label">Enter SMS Message:</string>
+    <string name="send_sms_label">Send SMS</string>
+    
+    
+    
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="APP_ID">1562102564046701</string>
+    <string name="exception">Exception: %1$s</string>
+
+    <string name="addPayment">Add Payment Method</string>
+    <string name="paymentMethods">Payment Methods</string>
+
+    <string name="endingIn">Card ending in </string>
+    <string name="progressMessage">Creating Token&#8230;</string>
+    <string name="validationErrors">Validation Errors</string>
+
+    <string name="cardNumber">Card Number</string>
+    <string name="save">Save</string>
+    <string name="cvc">CVC</string>
+
+</resources>

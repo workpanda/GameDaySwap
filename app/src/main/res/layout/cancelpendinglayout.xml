@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+    
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" android:id="@+id/tableLayout1">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/homePageSpacer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line:"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textColor="@color/white_text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/confirmTextLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white_text"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/homeTeamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Against:"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/opponent_color"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/confirmTextOpponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/opponent_color"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TeamHeadersRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/swappageOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wager:"
+                android:textColor="@color/money_color"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/confirmTextWager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/money_color"
+                android:textSize="@dimen/chaldisplaytextsize_normal"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+
+
+    <TextView
+        android:id="@+id/confirmTextBasic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Would you like to cancel the challenge?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/confirmtextsize_normal" />
+
+     <LinearLayout
+        android:id="@+id/teamBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/teambox"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/awayBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+            
+            <ImageView
+            android:id="@+id/counterAwayLogo"
+            android:layout_width="@dimen/teamboxlogowidth_normal"
+            android:layout_height="@dimen/teamboxlogoheight_normal"
+            android:src="@drawable/ic_loading" />
+            
+            <TextView
+            android:id="@+id/awayTeamCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/chaldisplaytextsize_normal"
+            android:text="awayTeam"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/atCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="at"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black_text" />
+
+        <LinearLayout
+            android:id="@+id/homeBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp" >
+            
+            <TextView
+            android:id="@+id/homeTeamCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/chaldisplaytextsize_normal"
+            android:text="homeTeam"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black_text" />
+             <ImageView
+            android:id="@+id/counterHomeLogo"
+            android:layout_width="@dimen/teamboxlogowidth_normal"
+            android:layout_height="@dimen/teamboxlogoheight_normal"
+            android:src="@drawable/ic_loading" />
+        </LinearLayout>
+    </LinearLayout>
+
+  
+
+
+
+    <Button
+        android:id="@+id/buttonCancelPending"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottombar"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Cancel Challenge"
+        android:textColor="@color/black_text" 
+        android:textSize="@dimen/bottombuttontextsize1_normal"/>
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+</RelativeLayout>

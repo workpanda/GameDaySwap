@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/homePageSpacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="First Name:"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homePageSpacer"
+        android:ems="10"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/homeTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextFirstName"
+        android:text="Last Name:"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homeTeamName"
+        android:ems="10"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <TextView
+        android:id="@+id/swappageOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLastName"
+        android:text="Email Address:"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextLastName"
+        android:layout_below="@+id/swappageOut"
+        android:ems="10"
+        android:textColor="@color/white_text"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/userinfotextsize_normal" />
+
+    <TextView
+        android:id="@+id/textUserAcctUpdateFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonUpdateUserAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Large Text"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <Button
+        android:id="@+id/buttonUpdateUserAccount"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight2_normal"
+        android:layout_above="@+id/buttonUpdateBack"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Update Info"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+    <Button
+        android:id="@+id/buttonUpdateBack"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight2_normal"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Cancel"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/bottombuttontextsize1_normal" />
+
+</RelativeLayout>

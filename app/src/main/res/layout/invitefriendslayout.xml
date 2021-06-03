@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_color">
+
+    <ListView
+        android:id="@+id/friendslist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/friendswitch"
+        android:layout_above="@+id/bottombar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape"
+        android:fadeScrollbars="false" >
+
+    </ListView>
+
+    <Switch
+        android:id="@+id/friendswitch"
+        style="@color/white_text"
+        android:layout_width="@dimen/friendswitchwidth_normal"
+        android:layout_height="@dimen/friendswitchheight_normal"
+        android:layout_centerHorizontal="true"
+        android:textOff="Current"
+        android:textOn="Invite" />
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+    
+</RelativeLayout>

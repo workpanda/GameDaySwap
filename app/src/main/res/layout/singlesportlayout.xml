@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/sportImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_hockey" />
+
+    <ListView
+        android:id="@+id/sportList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCustomChallenge"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/noGameTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="2dp"
+        android:background="@drawable/shape"
+        android:fadeScrollbars="false" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonCustomChallenge"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_above="@+id/bottombar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Create Your Own"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+
+    <TextView
+        android:id="@+id/noGameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sportImage"
+        android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:textSize="@dimen/spinnertitletextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <Spinner
+        android:id="@+id/sportfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sportList"
+        android:layout_below="@+id/sportImage" />
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+    
+</RelativeLayout>

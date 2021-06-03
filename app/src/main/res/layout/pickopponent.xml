@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <Button
+        android:id="@+id/SendChal"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="@dimen/bottombuttonbigpadding_normal"
+        android:paddingLeft="@dimen/bottombuttonbigpadding_normal"
+        android:paddingRight="@dimen/bottombuttonbigpadding_normal"
+        android:paddingTop="@dimen/bottombuttonbigpadding_normal"
+        android:text="Make Challenge"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+
+    <TextView
+        android:id="@+id/ChosenGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="ChosenGame"
+        android:textSize="@dimen/spinnertitletextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <ListView
+        android:id="@+id/opponentList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/friendFrame"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ChosenWinner"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:background="@drawable/shape"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="20dp" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/friendFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/SendChal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/outlineborder"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/confirmdisplay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/chosenFriend"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text="Friend Selected:"
+            android:textSize="@dimen/userinfotextsize_normal"
+            android:textColor="@color/white_text" />
+
+        <TextView
+            android:id="@+id/chosenFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/SendChal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:text="Selected Friend"
+            android:textSize="@dimen/spinnertitletextsize_normal"
+            android:textColor="@color/opponent_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ChosenWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ChosenGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="ChalLine"
+        android:textSize="@dimen/spinnertitletextsize_normal"
+        android:textColor="@color/opponent_color" />
+
+</RelativeLayout>

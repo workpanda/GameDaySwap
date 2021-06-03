@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="2dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/swapListIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Add:"
+                android:textColor="@color/inLabel" />
+
+            <TextView
+                android:id="@+id/swapListAddTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="AddTeam" />
+
+            <TextView
+                android:id="@+id/swapListAddPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="AddPos" />
+
+            <TextView
+                android:id="@+id/swapListAddName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AddName" />
+
+        </TableRow>
+
+        <!-- COMMENT OUT
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:id="@+id/swapListOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="Drop:"
+                android:textColor="@color/outLabel" />
+
+            <TextView
+                android:id="@+id/swapListDropTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="DropTeam" />
+
+            <TextView
+                android:id="@+id/swapListDropPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="DropPos" />
+
+            <TextView
+                android:id="@+id/swapListDropName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DropName" />
+        </TableRow>
+        
+        -->
+    </TableLayout>
+
+</LinearLayout>

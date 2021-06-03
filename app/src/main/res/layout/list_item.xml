@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <!-- Name Label -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/chalItemAwayLogo"
+            android:layout_width="@dimen/teamboxlogowidth_normal"
+            android:layout_height="@dimen/teamboxlogoheight_normal"
+            android:src="@drawable/ic_loading" />
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"
+            android:textSize="@dimen/friendlist1_normal"
+            android:text="Bears at Bears"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/chalItemHomeLogo"
+            android:layout_width="@dimen/teamboxlogowidth_normal"
+            android:layout_height="@dimen/teamboxlogoheight_normal"
+            android:src="@drawable/ic_loading" />
+    </LinearLayout>
+
+    <!-- Email label -->
+
+    <TextView
+        android:id="@+id/chalTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="#00336a" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp" >
+    
+
+    <!-- Mobile number label -->
+
+    <TextView
+        android:id="@+id/wagerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Mobile: "
+        android:textColor="#5d5d5d"
+        android:textSize="@dimen/userinfotextsize2_normal"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/chalStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Mobile: "
+        android:textSize="@dimen/userinfotextsize2_normal"
+        android:textStyle="bold" />
+    
+    
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottombar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/UserChalListTitle" >
+
+        <LinearLayout
+            android:id="@+id/homependingframe"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/homePageSpacer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/outlineborder2"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <TextView
+                android:id="@+id/homependingtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Pending Challenges:"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/userinfotextsize_normal" />
+
+            <ListView
+                android:id="@+id/homePending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/shape"
+                android:fadeScrollbars="false"
+                android:padding="2dp"
+                android:scrollbarSize="10dp" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/homePageSpacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="1dp" />
+
+        <LinearLayout
+            android:id="@+id/homeactiveframe"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/homePageSpacer"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outlineborder2"
+            android:orientation="vertical"
+            android:paddingBottom="0dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="3dp" >
+
+            <TextView
+                android:id="@+id/homeactivetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Active Challenges:"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/userinfotextsize_normal" />
+
+            <ListView
+                android:id="@+id/homeActive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/shape"
+                android:fadeScrollbars="false"
+                android:padding="2dp"
+                android:scrollbarSize="10dp" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+<fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+    <TextView
+        android:id="@+id/UserChalListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_user"
+        android:textColor="@color/money_color"
+        android:textSize="@dimen/homepagetitle_normal"
+        android:textStyle="bold" />
+
+</RelativeLayout>

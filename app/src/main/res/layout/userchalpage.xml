@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <ListView
+        android:id="@+id/userChalList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/noChalText1"
+        android:layout_above="@+id/bottombar"
+        android:background="@drawable/shape"
+        android:padding="2dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/noChalText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserChalListTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Medium Text"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/UserChalListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="UserChalPage"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/spinnertitletextsize_normal" />
+    
+    <fragment
+        android:id="@+id/bottombar"
+        android:name="com.hometown.sports.BottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombarheight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        
+        />
+
+</RelativeLayout>

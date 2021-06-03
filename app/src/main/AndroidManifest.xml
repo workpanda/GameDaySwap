@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hometown.sports"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <!-- Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Permission to use camera - required -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Permission to vibrate - recommended, allows vibration feedback on scan -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Camera features - recommended -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/APP_ID"/>
+
+        <activity
+            android:name=".HomeTownSportsHome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="UserChalListPage"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="UserAccountUpdateInfo"
+            android:label="Update your user account information"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="NewPassword"
+            android:label="Create New Password"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="AccountInfo"
+            android:label="Account Information"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="SingleChalActivity"
+            android:label="Challenge Detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ChallengePage"
+            android:label="Pick a Sport"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="CreditCardPage"
+            android:label="Enter Credit Card Info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="Pendingchallenges"
+            android:label="Pending Challenges"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="UserLogIn2"
+            android:label="Log In"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="PickOpponentPage"
+            android:label="Choose an Opponent"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="NewUserPage1"
+            android:label="Create User"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="NewUserPage2"
+            android:label="Add Credit Card"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="InviteFriends"
+            android:label="Invite Friend via Text"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="ConfirmationPage"
+            android:label="Confirm Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="MakeChalConfirmation"
+            android:label="Confrim Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="CreateChallenge"
+            android:label="Create a Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SwapPage"
+            android:label="Pick the Swap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SwapPage2"
+            android:label="Pick the Swap"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="CancelPending"
+            android:label="Cancel Pending Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="CounterPage"
+            android:label="Counter Pending Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="PublicChalPage"
+            android:label="Public Challenge List"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="SingleSportPage"
+            android:label="Select a Game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="SessionManager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="MenuBarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Single List Item Activity -->
+        <activity
+            android:name="SingleGameActivity"
+            android:label="Create your Challenge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.stripe.example.activity.PaymentActivity"
+            android:label="Billing Details"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>

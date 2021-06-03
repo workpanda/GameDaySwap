@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/noGameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Please Link Credit Card to your Account"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/confirmdisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/noGameTextView"
+        android:layout_marginTop="24dp"
+        android:text="Credit Card Number:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white_text" />
+
+    <EditText
+        android:id="@+id/CCNumField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/confirmdisplay2"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/swappageOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/CCNumField"
+        android:layout_marginTop="34dp"
+        android:text="Expires:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white_text" />
+
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/confirmdisplay2"
+        android:layout_below="@+id/swappageOut" />
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerMonth"
+        android:layout_toRightOf="@+id/spinnerMonth" />
+
+    <TextView
+        android:id="@+id/newUser2feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerMonth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white_text" />
+
+    <Button
+        android:id="@+id/buttonFinishUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newUser2feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Create Account!"
+        android:textColor="@color/black_text" />
+
+    <Button
+        android:id="@+id/buttonCCBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonFinishUser"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Go Back"
+        android:textColor="@color/black_text" />
+
+</RelativeLayout>

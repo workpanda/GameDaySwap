@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_goHome"
+          android:title="HomeTown Sports Home"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_inviteFriends"
+          android:title="Invite Friends"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_makeChal"
+          android:title="Make a Challenge"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_checkActive"
+          android:title="Check Active Challenges"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_checkPending"
+          android:title="Check Pending Challenges"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_checkHistory"
+          android:title="Check Challenge History"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_accountInfo"
+          android:title="Account Info"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_upgradeAcct"
+          android:title="Upgrade Account (N/A)"
+          android:showAsAction="never"/>
+    <item android:id="@+id/menu_logOff"
+          android:title="Log Off"
+          android:showAsAction="never"/>
+    
+
+</menu>

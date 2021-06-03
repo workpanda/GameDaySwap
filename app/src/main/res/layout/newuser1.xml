@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color" >
+
+    <TextView
+        android:id="@+id/noGameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a User Account:"
+        android:textSize="@dimen/spinnertitletextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="@dimen/bottombuttonwidth1_normal"
+        android:layout_height="@dimen/bottombuttonheight1_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlayout"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Continue"
+        android:textSize="@dimen/bottombuttontextsize1_normal"
+        android:textColor="@color/black_text" />
+
+    <EditText
+        android:id="@+id/firstNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/confirmdisplay2"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" 
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/swappageOut"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" 
+        android:ems="10" />
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/emailField2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/newUser2feedback"
+        android:ems="10"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" 
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordField2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" 
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passwordField2"
+        android:text="Re-Enter Password:"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <EditText
+        android:id="@+id/password2Field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" 
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/newUser1feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonNext"
+        android:layout_centerHorizontal="true"
+        android:text="Medium Text"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/confirmdisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/noGameTextView"
+        android:text="First Name:"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emailField2"
+        android:text="Password:"
+        android:textSize="@dimen/spinnertitletextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/newUser2feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lastNameField"
+        android:text="Email Address:"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+    <TextView
+        android:id="@+id/swappageOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstNameField"
+        android:text="Last Name:"
+        android:textSize="@dimen/userinfotextsize_normal"
+        android:textColor="@color/white_text" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color_old">#4c5d6a</color>
+    <color name="background_color">#00247F</color>
+    <color name="background_gray">#dbdddf</color>
+    <color name="white_text">#f1f3f4</color>
+    <color name="border_color">#262626</color>
+    <color name="opponent_color">#dbc44c</color>
+    <color name="money_color">#3ed654</color>
+    <color name="spinner_text_color">#f1f3f4</color>
+    <color name="spinner_background_color">#f1f3f4</color>
+    <color name="button_background_color">#f1f3f4</color>
+    <color name="input_field_background_color">#f1f3f4</color>
+    <color name="button_text_color">#f1f3f4</color>
+    <color name="input_field_color">#f1f3f4</color>
+    <color name="all_white">#ffffff</color>
+    <color name="black_text">#000000</color>
+    <color name="spinnerItem">#AAAAAA</color>
+    <color name="editText">#AAAAAA</color>
+    <color name="buttonText">#EEEEEE</color>
+    <color name="headerText">#EEEEEE</color>
+    <color name="outLabel">#FF0000</color>
+    <color name="inLabel">#006400</color>
+</resources>
